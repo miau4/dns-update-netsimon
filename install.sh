@@ -152,7 +152,7 @@ zone_id    = "$ZONE_ID"
 email      = "$CF_EMAIL"
 apikey     = "$CF_APIKEY"
 api_base   = "$CF_API"
-chunk_size = 250
+chunk_size = 1000
 
 with open(file_path, 'rb') as f:
     compressed = gzip.compress(f.read())
